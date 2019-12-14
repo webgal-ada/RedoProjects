@@ -1,0 +1,100 @@
+/*basic reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* pt font classification here in body*/
+body {
+  width: 400px;
+}
+
+.container {
+  font-family: 'Metrophobic', sans-serif;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+
+  height: 60px;
+  background-color: #BADA55;
+}
+
+.btn_left {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+.btn_right {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  color: rgb(8, 88, 8);
+  font-family: 'Grenze', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+img {
+  border-radius: 16px;
+  width: 100px;
+  padding: 8px;
+}
+
+.bio_image {
+  border-bottom: .5px solid black;
+  display: flex;
+  justify-content: flex-start;
+  color: green;
+  align-items: center;
+}
+
+.sailingBio {
+  padding: 12px;
+}
+
+.circles li {
+  font-size: 1.2em;
+  border-radius: 50%;
+  background-color: #BADA55;
+  text-align: center;
+  margin-top: 4px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle__text ul {
+  display: flex;
+  text-align: center;
+  color: rgb(8, 88, 8);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+section {
+  padding-top: 7px;
+  height: 30px;
+  background-color: #BADA55;
+  color: rgb(8, 88, 8);
+}

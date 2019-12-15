@@ -5,7 +5,7 @@ lightBlue rgb() */
 
 /*basic reset*/
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0px;
   box-sizing: border-box;
 }

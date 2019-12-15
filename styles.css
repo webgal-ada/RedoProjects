@@ -1,34 +1,40 @@
+/* font colors
+dark blue rgb(5,5,134)
+lightgreen rgb(19, 192, 42)
+lightBlue rgb() */
+
 /*basic reset*/
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0px;
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 /* pt font classification here in body*/
 body {
-  width: 400px;
-}
-
-.container {
   font-family: 'Metrophobic', sans-serif;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
+  width: 400px;
 }
 
 header {
   display: flex;
   justify-content: space-around;
-
   height: 60px;
-  background-color: #BADA55;
+  background-color: rgb(5, 5, 134);
+  color: #FFF;
+  align-items: center;
+}
+
+.container {
+  border-left: .5px solid black;
+  border-right: .5px solid black;
 }
 
 .btn_left {
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
   border-radius: 6px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 25px;
 }
 
 .btn_right {
@@ -38,15 +44,7 @@ header {
 }
 
 h1 {
-  color: rgb(8, 88, 8);
-  font-family: 'Grenze', serif;
-  text-shadow: 4px 4px 4px #aaa;
   font-size: 2.2rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-  font-weight: 900;
 }
 
 img {
@@ -63,7 +61,7 @@ img {
   align-items: center;
 }
 
-.sailingBio {
+.sail_Bio {
   padding: 12px;
 }
 
@@ -81,7 +79,7 @@ img {
 }
 
 .circle__text ul {
-  display: flex;
+  list-style-type: none;
   text-align: center;
   color: rgb(8, 88, 8);
 }
@@ -93,8 +91,52 @@ ul {
 }
 
 section {
-  padding-top: 7px;
+  font-size: 12px;
+  text-indent: 15px;
   height: 30px;
-  background-color: #BADA55;
-  color: rgb(8, 88, 8);
+  background-color: rgb(60, 104, 247);
+  color: #FFF;
 }
+
+table {
+  margin: 3px;
+  color: white;
+  font-size: 1em;
+}
+
+.cert_bx_light {
+  background-color: rgb(19, 192, 42);
+}
+
+.cert_bx_dark {
+  background-color: rgb(5, 5, 134);
+}
+
+footer {
+  display: inline-flex;
+  flex-direction: column;
+  height: 150px;
+  border-bottom: .5px solid black;
+}
+
+.clubAffil {
+  height: 60px;
+  background-color: rgb(202, 202, 202);
+  margin-bottom: 13px;
+}
+
+.link_btn {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 13px;
+  width: 325px;
+  height: 40px;
+  background-color: rgb(5, 5, 134);
+}
+
+/* footer {
+  background-color: tomato;
+  height: 40px;
+  width: 400px;
+  border-top: .5px solid black; */

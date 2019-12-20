@@ -19,6 +19,7 @@ body {
 }
 
 header {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
   height: 60px;
@@ -52,10 +53,20 @@ header {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  text-indent: 12px;
+  color: #FFF;
+
 }
 
 h3 {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -71,8 +82,9 @@ img {
   border-bottom: .5px solid rgb(195, 194, 194);
 }
 
-.circle {
+.circles .ltBlue {
   padding: 7px;
+  background-color: rgb(16, 136, 235);
 }
 
 .circles li {
@@ -100,12 +112,9 @@ ul {
   list-style-type: none;
 }
 
-section {
-  text-transform: uppercase;
-  font-size: 16px;
-  text-indent: 15px;
-  background-color: rgb(6, 95, 168);
-  color: #FFF;
+section h2 {
+  height: 25px;
+  background-color: rgb(16, 136, 235);
 }
 
 .sail_Bio {
@@ -139,10 +148,13 @@ table {
 }
 
 .link_btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   margin-top: 20px;
   align-self: center;
   color: white;
   text-align: center;
+  line-height: 45px;
   width: 336px;
   height: 49px;
   background-color: rgb(6, 95, 168);

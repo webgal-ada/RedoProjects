@@ -1,7 +1,9 @@
 /* font colors
-dark blue rgb(5,5,134)
-lightgreen rgb(19, 192, 42)
-lightBlue rgb() */
+
+section /dark blue    rgb(5,5,134)
+tablePart  lt_green    rgb(19, 192, 42)
+tableContrast Blue rgb(6, 95, 168);
+light grey rgb(); */
 
 /*basic reset*/
 * {
@@ -20,14 +22,16 @@ header {
   display: flex;
   justify-content: space-around;
   height: 60px;
-  background-color: rgb(5, 5, 134);
+  background-color: rgb(6, 95, 168);
   color: #FFF;
   align-items: center;
 }
 
 .container {
-  border-left: .5px solid black;
-  border-right: .5px solid black;
+  display: flex;
+  flex-direction: column;
+  border-left: .5px solid rgb(195, 194, 194);
+  border-right: .5px solid rgb(195, 194, 194);
 }
 
 .btn_left {
@@ -35,9 +39,13 @@ header {
   border-radius: 6px;
   width: 50px;
   height: 25px;
+  background-color: rgb(6, 95, 168);
+  border: 1px solid #FFF;
+  color: #FFF;
 }
 
 .btn_right {
+  background-color: rgb(6, 95, 168);
   border-radius: 6px;
   width: 40px;
   height: 40px;
@@ -47,41 +55,43 @@ h1 {
   font-size: 2.2rem;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 img {
-  border-radius: 16px;
+  border-radius: 9px;
   width: 100px;
-  padding: 8px;
+  margin: 12px;
 }
 
 .bio_image {
-  border-bottom: .5px solid black;
-  display: flex;
-  justify-content: flex-start;
-  color: green;
   align-items: center;
+  display: flex;
+  border-bottom: .5px solid rgb(195, 194, 194);
 }
 
-.sail_Bio {
-  padding: 12px;
+.circle {
+  padding: 7px;
 }
 
 .circles li {
-  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 95, 168);
   border-radius: 50%;
-  background-color: #BADA55;
-  text-align: center;
+  color: #FFF;
+  font-size: 1.2em;
   margin-top: 4px;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.circle__text ul {
-  list-style-type: none;
+.text_underCircle {
   text-align: center;
-  color: rgb(8, 88, 8);
+  margin-bottom: 4px;
+  font-size: 13px;
 }
 
 ul {
@@ -91,15 +101,19 @@ ul {
 }
 
 section {
-  font-size: 12px;
+  text-transform: uppercase;
+  font-size: 16px;
   text-indent: 15px;
-  height: 30px;
-  background-color: rgb(60, 104, 247);
+  background-color: rgb(6, 95, 168);
   color: #FFF;
 }
 
+.sail_Bio {
+  padding: 12px;
+}
+
 table {
-  margin: 3px;
+  padding: 5px;
   color: white;
   font-size: 1em;
 }
@@ -109,34 +123,35 @@ table {
 }
 
 .cert_bx_dark {
-  background-color: rgb(5, 5, 134);
+  background-color: rgb(6, 95, 168);
 }
 
-footer {
-  display: inline-flex;
+.clubAffilBlock {
+  display: flex;
   flex-direction: column;
-  height: 150px;
-  border-bottom: .5px solid black;
+  text-indent: 15px;
+  height: 130px;
 }
 
 .clubAffil {
-  height: 60px;
-  background-color: rgb(202, 202, 202);
-  margin-bottom: 13px;
+  background-color: rgb(195, 194, 194);
+  height: 44px;
 }
 
 .link_btn {
-  font-weight: bold;
+  margin-top: 20px;
+  align-self: center;
   color: white;
   text-align: center;
-  margin-bottom: 13px;
-  width: 325px;
-  height: 40px;
-  background-color: rgb(5, 5, 134);
+  width: 336px;
+  height: 49px;
+  background-color: rgb(6, 95, 168);
 }
 
-/* footer {
-  background-color: tomato;
-  height: 40px;
-  width: 400px;
-  border-top: .5px solid black; */
+footer {
+  background-image: url(iconSailing.png);
+  height: 53px;
+  width: 398px;
+  border-top: .5px solid rgb(195, 194, 194);
+  border-bottom: 1px solid rgb(195, 194, 194);
+}
